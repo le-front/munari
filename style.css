@@ -1,0 +1,120 @@
+body {
+	font-family: helvetica, sans-serif;
+	color: black;
+	margin: 0.05;
+}
+
+h1 {
+	font-family: 'Abril Fatface';
+	font-size: 300%;
+	letter-spacing: 0.05em;
+	margin-top: 0;
+	margin-bottom: 0.01em;
+	display:inline-block;
+}
+
+.shapes {
+	display: inline-block;
+	height: auto;
+}
+
+.shapes div {
+	margin-right: 0.4em;
+	display: inline-block;
+}
+
+.square {
+	background-color: black;
+	width: 1.5em;
+	height: 1.5em;
+	margin-left: 1em;
+}
+
+.circle {
+	background-color: black;
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 50%;
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0.9em 1.4em 0.9em;
+	border-color: transparent transparent black transparent;
+}
+
+/*h2 {font-family: helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 180%;
+	letter-spacing: 0.15em;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}*/
+
+hr {
+	border-width: 2px;
+	border-style: solid;
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 100%;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+	display: block;
+}
+
+.container {
+	height: 100px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas:
+	"a b"
+	"c d"
+	"e f";
+	grid-column-gap: 20px;
+}
+
+.container div {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	height: 300px;
+	width: 100%;
+}
+
+#project-1 {
+	background-color: red;
+	grid-area: a;
+}
+
+#project-2 {
+	background-color: blue;
+	grid-area: b;
+}
+
+#project-3 {
+	background-color: green;
+	grid-area: c;
+}
+
+#project-4 {
+	background-color: yellow;
+	grid-area: d;
+}
+
+#project-5 {
+	background-color: cyan;
+	grid-area: e;
+}
+
+#project-6 {
+	background-color: magenta;
+	grid-area: f;
+}
+
+footer {
+	position: fixed;
+	height: 100%;
+}
