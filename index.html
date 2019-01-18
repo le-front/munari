@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<meta charset="UTF-8">
 		<title>Bruno Munari</title>	
-	</head>
+		
+		<!-- Meta -->
+		<meta charset="UTF-8">
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1 user-scalable=no">
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
 	<body>
 		<div id="main">
 		<header>
@@ -15,22 +24,65 @@
     			<div class="circle"></div>
     			<div class="triangle"></div>
 			</div>
-			<hr>
-				
-			
-			
-    	</header>
+		</header>
     	<div class="container">
-    		<div id="project-1"></div>
-    		<div id="project-2"></div>
-    		<div id="project-3"></div>
-    		<div id="project-4"></div>
-    		<div id="project-5"></div>
-    		<div id="project-6"></div>
-    	</div>
+    		<div class="project a">
+				<img src="../images/img-a.png" alt="" />
+				<div class="overlay">
+					<h2 class="title">Più e meno</h2>
+				</div>
+			</div>
+			<div class="project b">
+				<img src="../images/img-b.png" alt="" />
+				<div class="overlay">
+					<h2 class="title">Manifesto Campari</h2>
+				</div>
+			</div>
+    		<div class="project c">
+				<img src="../images/img-c.png" alt="" />
+				<div class="overlay">
+					<h2 class="title">I prelibri</h2>
+				</div>
+			</div>
+    		<div class="project d">
+				<img src="../images/img-d.png" alt="" />
+				<div class="overlay">
+					<h2 class="title">Design as Art</h2>
+				</div>
+			</div>
+    		<div class="project e">
+				<img src="../images/img-e.png" alt="" />
+				<div class="overlay">
+					<h2 class="title">Le forchette</h2>
+				</div>
+			</div>
+			<div class="project f">
+				<img src="../images/img-f.png" alt="" />
+				<div class="overlay">
+					<h2 class="title">Nella notte buia</h2>
+				</div>
+			</div>
+		</div>
     	<footer>
     		<p></p>
     	</footer>
-    	</div>
+		</div>
+		<script>
+		
+		let acc = document.getElementsByClassName('accordion');
+
+		for (let i = 0; i < acc.length; i++) {
+  		  acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          let panel = this.nextElementSibling;
+          if (panel.style.maxHeight){
+            panel.style.maxHeight = null;
+          } else {
+		   panel.style.maxHeight = panel.scrollHeight + "px";
+		  } 
+		});
+		
+		
+		</script>
 	</body>
 </html>
